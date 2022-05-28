@@ -47,11 +47,7 @@ export default function Hero() {
         {SITE_DESCRIPTION}
       </h2>
       <div className={cn(styleUtils.appear, styleUtils['appear-fourth'], styles.info)}>
-        <p>{DATE}</p>
-        <div className={styles['description-separator']} />
-        <p>
-          <strong>Online</strong>
-        </p>
+        <button style={{padding: 15, backgroundColor: 'red', borderRadius: 8, margin: '0 55px 25px 0'}}>Více o nás</button>
       </div>
     </div>
   );

@@ -16,6 +16,10 @@
 
 .wrapper {
   margin-top: var(--space-12x);
+  background-color: rgba(0,0,0,0.9);
+  border-radius: 12spx;
+  padding: 50px;
+  padding-bottom: 0;
 }
 
 .hero {
@@ -32,7 +36,7 @@
   line-height: 1.4;
   text-transform: uppercase;
   display: flex;
-  justify-content: center;
+  justify-content: end;
   align-items: center;
   margin-bottom: var(--space-8x);
   color: var(--brand);
