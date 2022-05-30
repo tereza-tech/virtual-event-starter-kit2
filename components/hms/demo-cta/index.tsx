@@ -26,7 +26,7 @@ const DemoButton = () => {
   useClickOutside(ctaRef, clickedOutside);
   return (
     <div>
-    {/*<Dialog.Root>
+    {<Dialog.Root>
       <Dialog.Overlay className={cn(styles['overlay'])} />
       <Dialog.Trigger asChild>
         <button ref={ctaRef} id="cta-btn" className={cn(styles['cta-btn'])}>
@@ -45,7 +45,7 @@ const DemoButton = () => {
         </Dialog.Close>
         <DemoModal />
       </Dialog.Content>
-  </Dialog.Root>*/}</div>
+  </Dialog.Root>}</div>
   );
 };
 

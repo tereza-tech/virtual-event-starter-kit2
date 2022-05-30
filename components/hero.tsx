@@ -32,10 +32,11 @@ export default function Hero() {
       >
         {SITE_DESCRIPTION}
       </h2>
-      <h1 className={cn(styleUtils.appear, styleUtils['appear-third'], styles.hero)}>
-        Welcome to the
-        <br className={styleUtils['show-on-desktop']} /> {BRAND_NAME} conference
-      </h1>
+      <p className={cn(styleUtils.appear, styleUtils['appear-third'], styles.hero)}>
+        <p style={{fontSize: 27, fontWeight:400}}>O NÁS</p>
+        <br className={styleUtils['show-on-desktop']} /> Lorem ipsum dolor sit amet, consectetuer adiscing elit. Nullam eget nisl. 
+      <br /><br />Quisque tincidunt scelerisque libero. Duis ante orci, molestie vitae vehicula venenatis, tincidunt ac pede. Donec quis nibh at felis congue commodo.<br />Nunc dapibus tortor vel mi dapibus sollicitudin.
+      </p>
       <h2
         className={cn(
           styleUtils.appear,
@@ -47,7 +48,7 @@ export default function Hero() {
         {SITE_DESCRIPTION}
       </h2>
       <div className={cn(styleUtils.appear, styleUtils['appear-fourth'], styles.info)}>
-        <button style={{padding: 15, backgroundColor: 'red', borderRadius: 8, margin: '0 55px 25px 0'}}>Více o nás</button>
+        <button style={{padding: 15, backgroundColor: 'red', borderRadius: 8, margin: '25p 55px 25px 0'}}>Více o nás</button>
       </div>
     </div>
   );

@@ -15,7 +15,6 @@
  */
 
 import styles from './header.module.css';
-import Logo from '../public/Logo.jpeg';
 
 type Props = {
   hero: React.ReactNode;
@@ -25,7 +24,6 @@ type Props = {
 export default function Header({ hero, description }: Props) {
   return (
     <>
-    <img src={Logo.src}></img>
       <h1 className={styles.hero}>{hero}</h1>
       <p className={styles.description}>{description}</p>
     </>
