@@ -27,6 +27,8 @@ import React from 'react';
 import DemoButton from './hms/demo-cta';
 import RoomCta from './hms/demo-cta/room-cta';
 import { hmsConfig } from './hms/config';
+import VideoRow from './myown/video-row';
+import Team from './myown/team';
 import ViewSource from './view-source';
 import DJPult from '../public/dj-pult.jpg'
 import DJArt from '../public/dj-art.jpg'
@@ -56,9 +58,10 @@ export default function Layout({
           <div style={{ width: '70%', margin: 'auto', display: 'flex', justifyContent: 'space-between' }}><h3>PRAŽSKÁ TVORBA</h3><h3>PRAŽSKÁ TVORBA</h3><h3>PRAŽSKÁ TVORBA</h3></div>
           <div style={{ width: '100%' }}><h3 style={{ width: 70, margin: 'auto' }}>UVÁDÍ</h3></div>
         </div>
-        <div style={{ display: 'flex', height: 230 }}>
+        <div style={{ display: 'flex', height: 230}}>
           <div style={{ width: '100%', marginLeft: '5%', backgroundImage: "url(" + DJPult.src + ")", backgroundRepeat: 'no-repeat', backgroundAttachment: 'fixed', backgroundPosition: 'top right', backgroundSize: '500px 350px' }}><img src={Logo.src} style={{ width: 250, display: 'inline', marginTop: 13 }}></img><div style={{ display: 'inline', verticalAlign: 'top', marginLeft: 60, position: 'relative', top: 31 }}><h3 style={{ display: 'inline', marginRight: 10 }}>On Air: Johny Boss - Late night Rave</h3><div style={{ width: 55, height: 55, backgroundColor: 'red', borderRadius: 30, display: 'inline' }}>⫸</div></div></div>
         </div>
+        <div style={{ position: 'relative' }}> <DemoButton /></div>
         {!hideNav && (
           <header className={cn(styles.header)} style={{ flexWrap: 'wrap', justifyContent: 'space-between', paddingRight: '2%', paddingLeft: '2%' }}>
             <div style={{ marginLeft: 35 }}>Available streams: <button style={{ border: '2px solid white', borderRadius: 10, marginLeft: 20 }}>64 kb MP3</button><button style={{ border: '2px solid white', borderRadius: 10, marginLeft: 20 }}>32 kb MP3</button></div>
@@ -84,8 +87,6 @@ export default function Layout({
                 </a>
               ))}
             </div>
-
-
           </header>
         )}
         <ViewSource />
@@ -139,6 +140,8 @@ export default function Layout({
               <div style={{ width: '100%', height: '19%', padding: '8px 30px 10px 20px', backgroundColor: 'white' }}><div style={{ width: '100%', height: '100%', fontSize: 15, color: 'black' }}>READ MORE</div></div>
             </div>
           </div>
+          <Team></Team>
+          <VideoRow></VideoRow>
           <h1 style={{ width: '73%', margin: 'auto', marginBottom: 25, marginTop: '50px', fontSize: 45 }}>Novinky</h1>
           <div style={{ width: '70%', margin: 'auto', marginLeft: '13.5%', paddingBottom: 45, display: 'flex', justifyContent: 'space-between' }}>
             <div style={{ height: 270, width: 270, borderRadius: 140, backgroundColor: 'blue' }}>

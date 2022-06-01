@@ -18,12 +18,6 @@ const data = [
     role: 'stage',
     desc:
       'This one is self explanatory. Use this role for folks who are going to be the main guests of the session. Speakers can also invite attendees on the stage, and respond to public chat messages.'
-  },
-  {
-    name: 'Attendee',
-    roleName: 'attendee',
-    role: 'viewer',
-    desc: `This one is the most basic role - can see and hear whatever is happening on the stage, cannot share their audio and video, and can put up messages on the public chat section.`
   }
 ];
 
@@ -37,11 +31,6 @@ const DemoModal = () => {
   }, [router]);
   return (
     <div className="font-sans">
-      <p className="text-[32px] font-semibold my-0">Take your Webinar for a test drive</p>
-      <p className="text-gray-300 text-[15px] my-0">
-        We have setup a few profiles to make it easy for you or your team to experience each
-        perspective. Join in one click or share access with anyone else.
-      </p>
       <div>
         {data.map(m => (
           <div
@@ -61,9 +50,6 @@ const DemoModal = () => {
             </div>
           </div>
         ))}
-        <div className="flex items-center justify-center mt-4 ">
-          Powered by <HmsLogo />
-        </div>
       </div>
     </div>
   );

@@ -8,24 +8,9 @@ import InfoIcon from '@components/icons/icon-info';
 import DemoModal from '../demo-modal';
 
 const DemoButton = () => {
-  React.useEffect(() => {
-    setTimeout(() => {
-      const el = document.getElementById('cta-btn');
-      el?.classList.add('show-overlay');
-      const tooltip = document.getElementById('cta-tooltip');
-      tooltip?.classList.add('fade-in');
-    }, 3000);
-  }, []);
   const ctaRef = React.useRef(null);
-  const clickedOutside = () => {
-    const el = document.getElementById('cta-btn');
-    const tooltip = document.getElementById('cta-tooltip');
-    tooltip?.remove();
-    el?.classList.remove('show-overlay');
-  };
-  useClickOutside(ctaRef, clickedOutside);
   return (
-    <div>
+    <div style={{position: 'relative'}}>
     {<Dialog.Root>
       <Dialog.Overlay className={cn(styles['overlay'])} />
       <Dialog.Trigger asChild>
